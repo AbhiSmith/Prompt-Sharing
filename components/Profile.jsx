@@ -10,6 +10,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
 
       <div className='mt-10 prompt_layout'>
         {data.map((post) => (
+
           <PromptCard
             key={post._id}
             post={post}
@@ -17,6 +18,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
             handleDelete={() => handleDelete && handleDelete(post)}
           />
         ))}
+        
       </div>
     </section>
   )
